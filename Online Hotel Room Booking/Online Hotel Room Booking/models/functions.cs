@@ -7,7 +7,7 @@ using System.Web;
 
 namespace Online_Hotel_Room_Booking.models
 {
-    public class functions
+    public class Functions
     {
         private SqlConnection Con;
         private SqlCommand Cmd;
@@ -38,7 +38,11 @@ namespace Online_Hotel_Room_Booking.models
 
         public Functions()
         {
-            ConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\priya\OneDrive\Documents\HotelAsp.mdf;Integrated Security=True;Connect Timeout=30"
+            ConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\priya\OneDrive\Documents\HotelAsp.mdf;Integrated Security=True;Connect Timeout=30";
+            Con = new SqlConnection(ConStr);
+            Cmd = new SqlCommand();
+            Cmd.Connection = Con;
+
         }
     }
 }
