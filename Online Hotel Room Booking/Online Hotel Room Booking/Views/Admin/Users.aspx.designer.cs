@@ -10,16 +10,16 @@
 namespace Online_Hotel_Room_Booking.Views.Admin {
     
     
-    public partial class Rooms {
+    public partial class Users {
         
         /// <summary>
-        /// CatCb control.
+        /// GenderTb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList CatCb;
+        protected global::System.Web.UI.WebControls.DropDownList GenderTb;
         
         /// <summary>
         /// RoomsGV control.
