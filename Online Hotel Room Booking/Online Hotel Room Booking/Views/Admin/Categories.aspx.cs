@@ -69,5 +69,23 @@ namespace Online_Hotel_Room_Booking.Views.Admin
                 ErrMsg.InnerText = Ex.Message;
             }
         }
+
+        protected void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string CatName = CatNameTb.Value;
+                string Rem = RemarksTb.Value;
+                string Query = "Delete from CategoryTb1 where CatId = {0}";
+                Query = string.Format(Query, CategoriesGV.SelectedRow.Cells[1].Text);
+                Con.setData(Query);
+                ShowCategories();
+                ErrMsg.InnerText = "Catgory Deleted!!!";
+            }
+            catch (Exception Ex)
+            {
+                ErrMsg.InnerText = Ex.Message;
+            }
+        }
     }
 }

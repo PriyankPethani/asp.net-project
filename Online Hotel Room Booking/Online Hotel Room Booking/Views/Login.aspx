@@ -17,13 +17,13 @@
     </style>
 </head>
 <body>
+    <form id="form1" runat="server">
     <div class="container-fluid">
         <div class="row" style="height:120px;"></div>
         <div class="row">
         <div class="col-md-5"></div>
         <div class="col-md- bg-light rounded-3">
             <h1 class="text-success text-center">  goldan   Stay   Hotel  </h1>
-            <form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="Emailtb">
@@ -35,24 +35,22 @@
   </div>
   <div class="mb-3">
       
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      
-    <input type="radio" class="form-check-input" id="AdminCb">&nbsp; <label class="text-success">Admin</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="radio" class="form-check-input" id="UserCb" ><label class="text-success">User</label>
+    &nbsp;
+      <asp:RadioButton ID="AdminCb" runat="server" Text="Admin" />
+      <asp:RadioButton ID="UserCb" runat="server" Text="User" />
   </div>
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-success btn-block">Login</button>
+                    
+                    <asp:Button ID="LoginBtn" runat="server" Text="Login" class="btn btn-success btn-block" OnClick="LoginBtn_Click"/>
                 </div>
   
                 <br /> <br />
-</form>
         </div>
         <div class="col-md-4"></div>
         </div>
         
 
     </div>
-    <form id="form1" runat="server">
         <div>
         </div>
     </form>

@@ -13,5 +13,10 @@ namespace Online_Hotel_Room_Booking.Views
         {
 
         }
+
+        protected void LoginBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Admin/Rooms.aspx");
+        }
     }
 }
