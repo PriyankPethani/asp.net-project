@@ -35,10 +35,36 @@ namespace Online_Hotel_Room_Booking.Views.Admin
                 string Query = "insert into CategoryTb1 Values('{0}','{1}')";
                 Query = string.Format(Query, CatName, Rem);
                 Con.setData(Query);
-                ShowCategories();
+                ShowCategories();  
                 ErrMsg.InnerText = "Catgory Added!!!";
             }
             catch(Exception Ex)
+            {
+                ErrMsg.InnerText = Ex.Message;
+            }
+        }
+        int Key = 0;
+        protected void CategoriesGV_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Key = Convert.ToInt32(CategoriesGV.SelectedRow.Cells[1].Text);
+            CatNameTb.Value = CategoriesGV.SelectedRow.Cells[2].Text;
+            RemarksTb.Value = CategoriesGV.SelectedRow.Cells[3].Text;
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string CatName = CatNameTb.Value;
+                string Rem = RemarksTb.Value;
+                string Query = "update CategoryTb1 set CatName='{0}',CatRemarks='{1}' where CatId = {2}";
+                Query = string.Format(Query, CatName, Rem, CategoriesGV.SelectedRow.Cells[1].Text);
+                Con.setData(Query);
+                ShowCategories();
+                ErrMsg.InnerText = "Catgory Updated!!!";
+            }
+            catch (Exception Ex)
             {
                 ErrMsg.InnerText = Ex.Message;
             }

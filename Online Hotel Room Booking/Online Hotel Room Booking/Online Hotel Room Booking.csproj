@@ -72,6 +72,7 @@
     <Content Include="Assets\Images\hotel2.jfif" />
     <Content Include="Assets\Images\hotel3.jfif" />
     <Content Include="Assets\Images\hotel4.jfif" />
+    <Content Include="Assets\Images\pencil.png" />
     <Content Include="Assets\Lib\Bootstrap\css\bootstrap-grid.css" />
     <Content Include="Assets\Lib\Bootstrap\css\bootstrap-grid.css.map" />
     <Content Include="Assets\Lib\Bootstrap\css\bootstrap-grid.min.css" />

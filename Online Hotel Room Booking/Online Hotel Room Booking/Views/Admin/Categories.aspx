@@ -22,6 +22,10 @@
                         <label for="RemarksTb" class="form-label">Remarks</label>
                         <input type="text" class="form-control" id="RemarksTb" runat="server">
                     </div>
+                    <div>
+                        <asp:Button ID="EditBtn" runat="server" Text="Edit" class="btn btn-Warning btn-block" OnClick="Button1_Click" />
+            <asp:Button ID="DeleteBtn" runat="server" Text="Delete" class="btn btn-danger btn-block" />
+                    </div>
                     <div class="d-grid">
                         <label id="ErrMsg" runat="server" class="text-danger"></label>
             <asp:Button ID="SaveBtn" runat="server" Text="Save" class="btn btn-success btn-block" OnClick="SaveBtn_Click"/>
@@ -31,8 +35,15 @@
                 </form>
             </div>
             <div class="col-mp-9">
-                <asp:GridView ID="CategoriesGV" runat="server" class="table" CellPadding="4" ForeColor="#333333" GridLines="None">
+                <asp:GridView ID="CategoriesGV" runat="server" class="table" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="CategoriesGV_SelectedIndexChanged">
                     <AlternatingRowStyle BackColor="White" />
+                    <Columns>
+                        <asp:TemplateField ShowHeader="False">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Select" Text="Select"></asp:LinkButton>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
                     <EditRowStyle BackColor="#7C6F57" />
                     <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
                     <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
