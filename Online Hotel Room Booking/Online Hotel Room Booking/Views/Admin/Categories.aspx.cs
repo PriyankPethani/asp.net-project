@@ -21,7 +21,7 @@ namespace Online_Hotel_Room_Booking.Views.Admin
         }
         private void ShowCategories()
         {
-            string Query = "select CatId as Id, CatName as Categories, CatRemarks as Remarks from CategoriesTb1";
+            string Query = "select CatId as Id, CatName as Categories, CatRemarks as Remarks from CategoryTb1";
             CategoriesGV.DataSource = Con.GetData(Query);
             CategoriesGV.DataBind();
         }

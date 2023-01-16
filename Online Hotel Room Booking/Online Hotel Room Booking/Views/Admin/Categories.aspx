@@ -23,7 +23,7 @@
                         <input type="text" class="form-control" id="RemarksTb" runat="server">
                     </div>
                     <div>
-                        <asp:Button ID="EditBtn" runat="server" Text="Edit" class="btn btn-Warning btn-block" OnClick="Button1_Click" />
+                        <asp:Button ID="EditBtn" runat="server" Text="Edit" class="btn btn-danger btn-block" OnClick="Button1_Click" />
             <asp:Button ID="DeleteBtn" runat="server" Text="Delete" class="btn btn-danger btn-block" />
                     </div>
                     <div class="d-grid">
@@ -34,8 +34,9 @@
                     <br />
                 </form>
             </div>
-            <div class="col-mp-9">
-                <asp:GridView ID="CategoriesGV" runat="server" class="table" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="CategoriesGV_SelectedIndexChanged">
+           
+            <div class="col-mp-9 m-sm-auto">
+                <asp:GridView ID="CategoriesGV" runat="server" class="table" CellPadding="4" ForeColor="#333333" OnSelectedIndexChanged="CategoriesGV_SelectedIndexChanged">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:TemplateField ShowHeader="False">
