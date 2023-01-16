@@ -23,14 +23,15 @@
                         <input type="text" class="form-control" id="RemarksTb" runat="server">
                     </div>
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-success btn-block">Save</button>
+                        <label id="ErrMsg" runat="server" class="text-danger"></label>
+            <asp:Button ID="SaveBtn" runat="server" Text="Save" class="btn btn-success btn-block" OnClick="SaveBtn_Click"/>
                     </div>
 
                     <br />
                 </form>
             </div>
             <div class="col-mp-9">
-                <asp:GridView ID="RoomsGV" runat="server" class="table" CellPadding="4" ForeColor="#333333" GridLines="None">
+                <asp:GridView ID="CategoriesGV" runat="server" class="table" CellPadding="4" ForeColor="#333333" GridLines="None">
                     <AlternatingRowStyle BackColor="White" />
                     <EditRowStyle BackColor="#7C6F57" />
                     <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
