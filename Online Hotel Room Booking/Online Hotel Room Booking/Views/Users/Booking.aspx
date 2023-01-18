@@ -7,7 +7,9 @@
             <div class="col">
                 <div class="row">
                     <div class="col">
-                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col">
+                                 <div class="mb-3">
                         <label for="RoomTb" class="form-label">Room</label>
                         <input type="text" class="form-control" id="RoomTb" runat="server">
                     </div>
@@ -15,21 +17,32 @@
                         <label for="DateInTb" class="form-label">Date In</label>
                         <input type="date" class="form-control" id="DateInTb" runat="server">
                     </div>
-                    <div class="mb-3">
+                            </div>
+                            <div class="col">
+                                 <div class="mb-3">
                         <label for="DateOutTb" class="form-label">Date Out</label>
                         <input type="date" class="form-control" id="DateOutTb" runat="server">
-                    </div>
+                        </div>
                         <div class="mb-3">
                         <label for="AmountTb" class="form-label">Amount</label>
                         <input type="text" class="form-control" id="AmountTb" runat="server">
                     </div>
-
-                        <!--<div></div>-->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div>
+                        <label id="ErrMsg" runat="server" class="text-danger"></label>
+            <asp:Button ID="BookBtn" runat="server" Text="Book Room" class="btn btn-warning" OnClick="BookBtn_Click"/>
+            <asp:Button ID="ResetBtn" runat="server" Text="Reset" class="btn btn-danger"/>
+                    </div>
+                            </div>
+                        </div>
                        
                     </div>
                 </div>
                 <h3 class="text-primary">Rooms</h3>
-                <asp:GridView ID="RoomsGV" runat="server" class="table" CellPadding="4" ForeColor="#333333" Width="1237px">
+                <asp:GridView ID="RoomsGV" runat="server" class="table" CellPadding="4" ForeColor="#333333" Width="1237px" OnSelectedIndexChanged="RoomsGV_SelectedIndexChanged">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:TemplateField ShowHeader="False">

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Online_Hotel_Room_Booking.Views.Login" EnbleEventValidation="false"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Online_Hotel_Room_Booking.Views.Login" %>
 
 <!DOCTYPE html>
 
@@ -23,7 +23,7 @@
         <div class="row">
         <div class="col-md-5"></div>
         <div class="col-md- bg-light rounded-3">
-            <h1 class="text-success text-center">  goldan   Stay   Hotel  </h1>
+            <h1 class="text-success text-center">  Honest   Stay   Hotel  </h1>
   <div class="mb-3">
     <label for="EmailTb" class="form-label">Email address</label>
     <input type="text" class="form-control" id="UserTb" runat="server" required="required">
@@ -37,7 +37,7 @@
       <label id="ErrMsg" class="text-danger" runat="server"></label>
       
     &nbsp;
-      <asp:RadioButton ID="AdminCb" runat="server" Text="Admin" name="Role" checked="True"/>
+      <asp:RadioButton ID="AdminCb" runat="server" Text="Admin" name="Role" />
       <asp:RadioButton ID="UserCb" runat="server" Text="User" name="Role"/>
   </div>
                 <div class="d-grid">

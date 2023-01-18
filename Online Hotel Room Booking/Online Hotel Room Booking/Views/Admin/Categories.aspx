@@ -26,10 +26,8 @@
                     <div class="row">
                         <div class="col d-grid">
                             <asp:Button ID="EditBtn" runat="server" Text="Edit" class="btn btn-warning btn-block" OnClick="Button1_Click" />
-                        </div>
-                        &nbsp;
-                        <div class="col d-grid">
-                            <asp:Button ID="DeleteBtn" runat="server" Text="Delete" class="btn btn-danger btn-block" />
+                        &nbsp;&nbsp;
+                            <asp:Button ID="DeleteBtn" runat="server" Text="Delete" class="btn btn-danger btn-block" OnClick="DeleteBtn_Click1" />
                         </div>
                         
             

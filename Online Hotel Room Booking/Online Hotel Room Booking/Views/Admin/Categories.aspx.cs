@@ -88,5 +88,10 @@ namespace Online_Hotel_Room_Booking.Views.Admin
                 ErrMsg.InnerText = Ex.Message;
             }
         }
+
+        protected void DeleteBtn_Click1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -49,6 +49,33 @@ namespace Online_Hotel_Room_Booking.Views.Users {
         protected global::System.Web.UI.HtmlControls.HtmlInputText AmountTb;
         
         /// <summary>
+        /// ErrMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ErrMsg;
+        
+        /// <summary>
+        /// BookBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BookBtn;
+        
+        /// <summary>
+        /// ResetBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ResetBtn;
+        
+        /// <summary>
         /// RoomsGV control.
         /// </summary>
         /// <remarks>
