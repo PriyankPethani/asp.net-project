@@ -14,6 +14,7 @@ namespace Online_Hotel_Room_Booking.Views.Admin
         {
             Con = new models.Functions();
             ShowCategories();
+            LogedUser.InnerText = Session["UserName"] as string;
         }
         public override void VerifyRenderingInServerForm(Control control)
         {

@@ -7,72 +7,54 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Online_Hotel_Room_Booking.Views {
+namespace Online_Hotel_Room_Booking.Views.Users {
     
     
-    public partial class Login {
+    public partial class Booking {
         
         /// <summary>
-        /// form1 control.
+        /// RoomTb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText RoomTb;
         
         /// <summary>
-        /// UserTb control.
+        /// DateInTb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText UserTb;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl DateInTb;
         
         /// <summary>
-        /// PasswordTb control.
+        /// DateOutTb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword PasswordTb;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl DateOutTb;
         
         /// <summary>
-        /// ErrMsg control.
+        /// AmountTb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ErrMsg;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText AmountTb;
         
         /// <summary>
-        /// AdminCb control.
+        /// RoomsGV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton AdminCb;
-        
-        /// <summary>
-        /// UserCb control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton UserCb;
-        
-        /// <summary>
-        /// LoginBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LoginBtn;
+        protected global::System.Web.UI.WebControls.GridView RoomsGV;
     }
 }

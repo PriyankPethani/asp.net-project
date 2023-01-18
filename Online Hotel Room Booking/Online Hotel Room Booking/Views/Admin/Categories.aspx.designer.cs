@@ -13,6 +13,15 @@ namespace Online_Hotel_Room_Booking.Views.Admin {
     public partial class Categories {
         
         /// <summary>
+        /// LogedUser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LogedUser;
+        
+        /// <summary>
         /// CatNameTb control.
         /// </summary>
         /// <remarks>

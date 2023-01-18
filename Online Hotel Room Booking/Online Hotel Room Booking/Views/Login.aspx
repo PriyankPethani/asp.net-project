@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Online_Hotel_Room_Booking.Views.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Online_Hotel_Room_Booking.Views.Login" EnbleEventValidation="false"%>
 
 <!DOCTYPE html>
 
@@ -25,19 +25,20 @@
         <div class="col-md- bg-light rounded-3">
             <h1 class="text-success text-center">  goldan   Stay   Hotel  </h1>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="Emailtb">
+    <label for="EmailTb" class="form-label">Email address</label>
+    <input type="text" class="form-control" id="UserTb" runat="server" required="required">
     
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="Passwordtb">
+    <label for="PasswordTb" class="form-label">Password</label>
+    <input type="password" class="form-control" id="PasswordTb" runat="server" required="required">
   </div>
   <div class="mb-3">
+      <label id="ErrMsg" class="text-danger" runat="server"></label>
       
     &nbsp;
-      <asp:RadioButton ID="AdminCb" runat="server" Text="Admin" />
-      <asp:RadioButton ID="UserCb" runat="server" Text="User" />
+      <asp:RadioButton ID="AdminCb" runat="server" Text="Admin" name="Role" checked="True"/>
+      <asp:RadioButton ID="UserCb" runat="server" Text="User" name="Role"/>
   </div>
                 <div class="d-grid">
                     
